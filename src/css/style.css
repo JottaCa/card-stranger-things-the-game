@@ -1,0 +1,126 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: url("../image/map-background.jpg")  center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(8px);
+}
+
+.personagens {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.cartao-personagem {
+    display: none;
+    background-color: rgba(162, 6, 6, 0.573);
+    max-width: 360px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cartao-personagem.aberto {
+    display: block;
+}
+
+.cartao-personagem img {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.cartao-personagem .cartao-topo {
+    padding: 30px 40px 0;
+}
+
+.cartao-personagem .nome {
+    margin-bottom: 5px;
+}
+
+.cartao-personagem .dano-maximo {
+    background-color: #ffffff;
+    font-size: 12px;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.cartao-personagem .detalhes {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartao-personagem .cartao-informacoes {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cartao-personagem .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6b727a;
+}
+
+.cartao-personagem .cartao-informacoes .habilidades {
+    padding: 0 10px;
+    font-size: 15px;
+    min-height: 140px;
+    width: 270px;
+}
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem .personagem img {
+    width: 25%;
+}
+
+.listagem .personagem {
+    background-color: #6b727a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+    transition: 0.15s ease-in-out;
+}
+
+.listagem .personagem:hover {
+    transform: scale(1.05);
+}
+
+.listagem .personagem span {
+    padding-right: 20px;
+}
+
+.listagem .personagem.ativo {
+    background-color: #d92226;
+}

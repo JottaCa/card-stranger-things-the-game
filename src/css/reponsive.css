@@ -1,0 +1,60 @@
+@media(max-width: 750px) {
+    body {
+        align-items: start;
+    }
+    
+    .personagens {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .cartao-personagem {
+        max-width: 300px;
+    }
+
+    .cartao-personagem .cartao-informacoes {
+        padding: 40px 30px 20px;
+        margin-top: -50px;
+    }
+
+    .cartao-personagem .cartao-informacoes h3 {
+        font-size: 16px;
+    }
+
+    .listagem {
+        max-width: 360px;
+    }
+
+    .listagem .personagem {
+        width: 45%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin: 0;
+        border-radius: 8px;
+    }
+
+    .listagem ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .header {
+        display: none;
+    }
+}
+
+@media(max-height: 900px){
+    /* .header {
+        display: none;
+    } */
+    
+    body {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+}
